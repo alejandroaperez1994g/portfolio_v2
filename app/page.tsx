@@ -1,10 +1,11 @@
-import Profile from "@/components/Profile/Profile";
+import Profile from "@/views/sections/Profile/Profile";
+import Hero from "@/views/sections/Hero/Hero";
 
 export default function Home() {
-    const Hi = "Alejandro";
-  return (
-    <main className="flex flex-col align-middle items-center h-screen w-screen bg-black pt-6">
-      <Profile />
-    </main>
-  )
+    return (
+        <main className="flex flex-col  align-middle items-center gap-4 bg-black pt-6">
+            <Profile/>
+            <Hero/>
+        </main>
+    )
 }

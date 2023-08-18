@@ -3,21 +3,21 @@ import type {Metadata} from 'next'
 import {Inter} from 'next/font/google'
 import {ReactNode} from "react";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({subsets: ['latin']})
 
 export const metadata: Metadata = {
-  title: 'Alejandro Avila - Portfolio',
-  description: 'Alejandro Avila - Portfolio',
+    title: 'Alejandro Avila - Portfolio',
+    description: 'Alejandro Avila - Portfolio',
 }
 
 export default function RootLayout({
-  children,
-}: {
-  children: ReactNode
+                                       children,
+                                   }: {
+    children: ReactNode
 }) {
-  return (
-    <html lang="en">
-      <body className={`${inter.className} text-white`}>{children}</body>
-    </html>
-  )
+    return (
+        <html lang="en">
+        <body className={`${inter.className} text-white min-h-screen flex`}>{children}</body>
+        </html>
+    )
 }
