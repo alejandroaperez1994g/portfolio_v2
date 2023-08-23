@@ -9,7 +9,7 @@ type Props = {};
 export default function Profile({}: Props) {
     return (
         <section
-            className="mb-14 flex flex-1 flex-col items-center rounded-3xl border border-slate-500 p-4 w-[98%] h-[90%]">
+            className="lg:hidden mb-14 flex flex-1 flex-col items-center rounded-3xl border border-slate-500 p-4 w-[98%] h-[90%]">
             <p className="mb-10 self-end pb-6">Software Developer</p>
             <Image
                 src={"https://cdnb.artstation.com/p/assets/images/images/002/322/823/large/hicham-habchi-cover2.jpg?1460289817"}
