@@ -1,10 +1,10 @@
-type Props = {
+type IProjectCardProps = {
     title: string,
     image: string,
     link: string,
     technologies: string[],
 };
-const ProjectCard = ({title, image, link, technologies}: Props) => {
+const ProjectCard = ({title, image, link, technologies}: IProjectCardProps) => {
     return (
         <article className="mb-6 w-full lg:w-[47%] group">
             <div
