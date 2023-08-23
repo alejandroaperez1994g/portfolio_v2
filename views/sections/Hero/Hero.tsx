@@ -4,6 +4,7 @@ import {faLongArrowAltDown} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import Heading from '@/views/commons/heading/Heading';
 import home from '@/public/assets/icons/home.svg';
+import {getYearsOfDevelopment} from "@/helpers/date";
 
 const Hero = () => {
     return (
@@ -40,7 +41,7 @@ const Hero = () => {
                 <div className="mt-8 flex justify-between lg:justify-normal lg:gap-16 gap-2">
                     <div className="text-center">
             <span className="text-5xl lg:text-[72px] lg:mb-4 text-[#27e98b]">
-              5+
+              {getYearsOfDevelopment()}+
             </span>
                         <p className="text-gray-500">YEARS OF</p>
                         <p className="text-gray-500">EXPERIENCE</p>
