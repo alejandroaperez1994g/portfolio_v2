@@ -7,7 +7,6 @@ type Props = {
     }[],
 };
 const Experience = ({date_text, experiences, last}: Props) => {
-    console.log(date_text, last)
     return (
         <div
             className={`relative flex flex-col w-full border-l border-gray-500 ${!last ? "pb-10" : "pb-0"}  group`}>
@@ -18,9 +17,9 @@ const Experience = ({date_text, experiences, last}: Props) => {
                 <span className="group-hover:text-[#28e98c] text-gray-500 -mt-[5px] mb-6">{date_text}</span>
 
                 {
-                    experiences.map(({position, company}) => {
+                    experiences.map(({position, company}, index) => {
                         return (
-                            <div className={`flex flex-col ${!last ? "mb-4" : "mb-0"}`}>
+                            <div key={index} className={`flex flex-col ${!last ? "mb-4" : "mb-0"}`}>
                                 <h4 className="text-3xl mb-3">{position}</h4>
                                 <p className="text-gray-500">{company}</p>
                             </div>
