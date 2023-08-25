@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Projects = () => {
     return (
-        <section id={"portfolio"} className="flex flex-col rounded-3xl border-slate-500 p-4 w-[98%]">
+        <section id="portfolio" className="flex flex-col rounded-3xl border-slate-500 p-4 w-[98%]">
             <Heading text={"PORTFOLIO"} icon={<Image priority src={cubes} alt="cubesIcon"/>}/>
             <h1 className="mb-10 text-4xl">Featured <span className="text-[#27e98b]">Projects</span></h1>
             <div className="flex flex-col lg:flex-wrap lg:flex-row lg:justify-around gap-8">

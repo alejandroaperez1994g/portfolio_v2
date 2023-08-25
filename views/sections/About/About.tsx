@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const About = () => {
     return (
-        <section className="flex flex-col items-center rounded-3xl border-slate-500 p-4 w-[98%] ">
+        <section id="about" className="flex flex-col items-center rounded-3xl border-slate-500 p-4 w-[98%] ">
             <Heading
                 text={'ABOUT'}
                 icon={<Image priority src={userIcon} alt="userIcon"/>}

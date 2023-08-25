@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Skills = () => {
     return (
-        <section className="flex flex-col rounded-3xl border-slate-500 p-4 w-[98%]">
+        <section id="skills" className="flex flex-col rounded-3xl border-slate-500 p-4 w-[98%]">
             <Heading text={"MY SKILLS"} icon={<Image priority src={shapes} alt={"shapesIcon"}/>}/>
             <h1 className="mb-10 text-4xl">
                 My <span className="text-[#27e98b]">Advantages</span>

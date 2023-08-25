@@ -8,7 +8,7 @@ import {getYearsOfDevelopment} from "@/helpers/date";
 
 const Hero = () => {
     return (
-        <section className="flex flex-col items-center rounded-3xl border-slate-500 p-4 w-[98%]">
+        <section id="hero" className="flex flex-col items-center rounded-3xl border-slate-500 p-4 w-[98%]">
             <Heading
                 text={'INTRODUCE'}
                 icon={<Image priority src={home} alt="homeIcon"/>}
@@ -34,7 +34,7 @@ const Hero = () => {
                         className="animate-spin-slow"
                     />
                     <FontAwesomeIcon
-                        icon={faLongArrowAltDown}
+                        icon={faLongArrowAltDown} size="xl"
                         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform text-white w-5"
                     />
                 </Link>

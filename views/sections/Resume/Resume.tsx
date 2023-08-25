@@ -44,7 +44,7 @@ const education_experience = [
 
 const Resume = () => {
     return (
-        <section className="flex flex-col  rounded-3xl border-slate-500 p-4 w-[98%] ">
+        <section id="resume" className="flex flex-col  rounded-3xl border-slate-500 p-4 w-[98%] ">
             <Heading
                 text="RESUME"
                 icon={<Image priority src={briefcase} alt={"briefcaseIcon"}/>}
