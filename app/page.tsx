@@ -1,22 +1,22 @@
-"use client";
+"use client"
 import Hero from "@/views/sections/Hero/Hero";
 import About from "@/views/sections/About/About";
 import Resume from "@/views/sections/Resume/Resume";
-import Skills from "@/views/sections/Skills/Skills";
 import Projects from "@/views/sections/Projects/Projects";
 import Contact from "@/views/sections/Contact/Contact";
 import Profile from "@/views/sections/Profile/Profile";
+import Skills from "@/views/sections/Skills/Skills";
 import {useEffect, useState} from "react";
 import Loading from "@/app/loading";
+
 
 export default function Home() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        // Simulación de una solicitud de red o tarea que lleva tiempo
         setTimeout(() => {
-            setIsLoading(false); // Cuando la tarea se completa, establece isLoading en false
-        }, 2000); // Esto simula una espera de 2 segundos
+            setIsLoading(false);
+        }, 500);
     }, []);
 
     if (isLoading) {
