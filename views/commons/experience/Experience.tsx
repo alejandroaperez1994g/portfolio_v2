@@ -1,12 +1,13 @@
-type Props = {
+export interface IExperienceProps {
     date_text: string,
     last?: boolean,
     experiences: {
         position: string,
         company: string
     }[],
-};
-const Experience = ({date_text, experiences, last}: Props) => {
+}
+
+const Experience = ({date_text, experiences, last}: IExperienceProps) => {
     return (
         <div
             className={`relative flex flex-col w-full border-l border-gray-500 ${!last ? "pb-10" : "pb-0"}  group`}>
