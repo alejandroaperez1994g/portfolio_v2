@@ -1,10 +1,22 @@
 import Heading from "@/views/commons/heading/Heading";
-import projects from "@/views/sections/Projects/data";
-import ProjectCard from "@/views/commons/project_card/ProjectCard";
+import ProjectCard, {IProjectCardProps as Projects} from "@/views/commons/project_card/ProjectCard";
 import cubes from "@/public/assets/icons/cubes.svg";
 import Image from "next/image";
+import {useEffect, useState} from "react";
+import {api} from "@/services/api";
 
 const Projects = () => {
+    const [projects, setProjects] = useState<Projects[]>([])
+
+    useEffect(() => {
+        function updateSkills() {
+            api.projects().then((projects) => {
+                setProjects(projects)
+            })
+        }
+
+        updateSkills()
+    }, []);
     return (
         <section id="portfolio" className="flex flex-col rounded-3xl border-slate-500 p-4 w-[98%]">
             <Heading text={"PORTFOLIO"} icon={<Image priority src={cubes} alt="cubesIcon"/>}/>
