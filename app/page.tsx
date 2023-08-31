@@ -27,7 +27,7 @@ export default function Home() {
     return (
         <main className="flex m-auto lg:justify-center">
             <div
-                className="flex lg:max-w-[770px]  flex-col items-center gap-14 lg:gap-36 pt-6 align-middle bg-[#1f1f1f] ">
+                className="flex lg:max-w-[770px] 3xl:max-w-[1024px] md:max-w-[750px] flex-col items-center gap-14 lg:gap-36 pt-6 align-middle bg-[#1f1f1f] xs:max-w-[370px] ">
                 <Profile contained={true}/>
                 <Hero/>
                 <About/>
